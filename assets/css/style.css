@@ -1,0 +1,105 @@
+body{
+    font-family: 'BalooDa2-Medium', 'Courier New', monospace !important;
+    padding-bottom: 0px;
+    margin:0;
+    overflow-x: hidden;
+}
+.topo{
+    background-size: 100% 100%;
+    background-image: url(../img/bg/3.png);
+    background-repeat:no-repeat;
+    background-attachment: initial;
+    box-shadow: inset 100rem 100rem rgba(255, 222, 89, 0.3);
+    color:white;
+}
+b{
+    color:#ffde59 !important;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.bg-quemsou{
+    background-color: rgba(0,0,0, 0.9);
+    /*box-shadow: inset 550px 550px rgbargba(108, 14, 214);*/
+}
+article{
+    line-height: 2rem;
+}
+.bg-transparant-black{
+    background-color:rgba(0,0,0, 0.9) !important;
+}
+.fill{
+    width: 100%;
+    height: 2px;
+    background-color:blue;
+    background-image:linear-gradient(to right,#0f1517,#ffde59,#ffde59,#0f1517);
+}
+.btn-outline-dark:hover {
+     background-color: rgba(0,0,0,.5) !important; 
+    border-color: rgba(0,0,0,.5) !important; 
+}
+.btn-outline-dark:not(:disabled):not(.disabled).active{
+    background-color: rgba(0,0,0,.5) !important;
+    border:rgba(0,0,0,.5) !important;
+}
+.bg-negocio{
+    background-color: rgba(0,0,0, 0.9);
+    /*box-shadow: inset 550px 550px rgbargba(108, 14, 214);*/
+}
+[data-menu="button"]{
+    margin-top: -5rem;
+    right: 0rem;
+    z-index: 1001;
+    position: fixed;
+    transition: transform .4s !important;
+}
+[data-menu="button"].active{
+   transform: rotate(45deg);
+}
+[data-menu="list"]{
+    z-index: 1000;top:0px;bottom:0;right: 0rem;
+    background-color: #0f1517;
+    margin-right: -15rem;
+    box-shadow: inset 2px 2px 2px 0 rgba(255,255,255, 0.9);
+    transition: all .4s linear;
+}
+[data-menu="list"].active{
+    margin-right: 0rem !important;
+}
+[data-menu="list"] .nav-link{
+    color:#eee !important;
+}
+[data-menu="list"] .nav-link:hover{
+    color:#ffde59  !important;
+    text-decoration: #ffde59 !important;
+}
+footer a.h6{
+    margin-left: -22px;
+    color:#ffde59 !important;
+}
+footer a.h6:hover{
+    color:#eee !important;
+}
+.card-body{
+    box-shadow: 10px 10px #ffde59;
+}
+#shadow{
+    box-shadow: 0px 20px rgba(255, 222, 89, .7)
+}
+[data-anime="titulo"]:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca{
+    0%, 100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+}
