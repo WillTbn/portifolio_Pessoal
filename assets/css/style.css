@@ -6,7 +6,7 @@ body{
 }
 .topo{
     background-size: 100% 100%;
-    background-image: url(../img/bg/3.png);
+    background-image: url(../img/bg/fundo-tbn.jpg);
     background-repeat:no-repeat;
     background-attachment: initial;
     box-shadow: inset 100rem 100rem rgba(255, 222, 89, 0.3);
