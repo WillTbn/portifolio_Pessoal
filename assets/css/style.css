@@ -114,7 +114,6 @@ ul.slide{
 }
 .slide{
     display: flex;
-    transform: translate3d(200px,0px,0px);
 }
 .slide li{
     width: 80vw;
