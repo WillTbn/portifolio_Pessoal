@@ -103,3 +103,26 @@ footer a.h6:hover{
         opacity:0;
     }
 }
+/* Slide */
+.wrapper{
+    overflow: hidden;
+}
+ul.slide{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.slide{
+    display: flex;
+    transform: translate3d(200px,0px,0px);
+}
+.slide li{
+    width: 80vw;
+    flex-shrink: 0;
+    max-width:800px;
+    margin: 0 20px;
+}
+.slide img{
+    display: block;
+    max-width: 100%;
+}
