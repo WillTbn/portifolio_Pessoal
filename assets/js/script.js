@@ -10,6 +10,10 @@ const jorge = document.querySelector('[data-anime="titulo"]');
 
 initTypeWriter(jorge);
 
-const slide = new Slide('.slide', '.wrapper');
-slide.init();
-console.log(slide);
+// const slide = new Slide('.slide', '.wrapper');
+// slide.init();
+// console.log(slide);
+
+const now = new Date;
+const year = document.getElementById("year");
+year.innerText = "Jorge Nunes - " + now.getFullYear() ;
