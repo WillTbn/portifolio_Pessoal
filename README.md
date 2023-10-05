@@ -1,6 +1,6 @@
 ## Meu Portfolio 
  
-Aqui tento dar uma cara única para minha página pessoal, tendo usar aqui tudo que aprender com Javascript, HTML, CSS. 
+Aqui tento dar uma cara única para minha página pessoal, tendo usar aqui tudo que aprender com Javascript, HTML, CSS.
  
 ## Documentação 
  

@@ -4,16 +4,39 @@ body{
     margin:0;
     overflow-x: hidden;
 }
+p{
+    -webkit-text-stroke-width: thin;
+}
+.pr-10{
+    padding: 0px 0px 15px 10px;
+}
+.text-color-six{
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    
+}
+/* .navbar-brand{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.navbar-brand::before{
+    content: "<";
+}
+.navbar-brand::after{
+    content: " />";
+    display: inline;
+} */
+.dfs{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+} 
 .topo{
-    background-size: 100% 100%;
-    background-image: url(../img/bg/fundo-tbn.jpg);
-    background-repeat:no-repeat;
-    background-attachment: initial;
-    box-shadow: inset 100rem 100rem rgba(255, 222, 89, 0.3);
-    color:white;
+    background-color: #090d19 ;
 }
 b{
-    color:#ffde59 !important;
+    color:#CFDBFF !important;
 }
 .circle {
     width: 200px;
@@ -22,7 +45,7 @@ b{
     object-fit: cover;
 }
 .bg-quemsou{
-    background-color: rgba(0,0,0, 0.9);
+    background-color: #0d111b;
     /*box-shadow: inset 550px 550px rgbargba(108, 14, 214);*/
 }
 article{
@@ -35,7 +58,7 @@ article{
     width: 100%;
     height: 2px;
     background-color:blue;
-    background-image:linear-gradient(to right,#0f1517,#ffde59,#ffde59,#0f1517);
+    background-image:linear-gradient(to right,#0f1517,#CFDBFF,#CFDBFF,#0f1517);
 }
 .btn-outline-dark:hover {
      background-color: rgba(0,0,0,.5) !important; 
@@ -73,22 +96,23 @@ article{
     color:#eee !important;
 }
 [data-menu="list"] .nav-link:hover{
-    color:#ffde59  !important;
-    text-decoration: #ffde59 !important;
+    color:#CFDBFF  !important;
+    text-decoration: #CFDBFF !important;
 }
 footer a.h6{
     margin-left: -22px;
-    color:#ffde59 !important;
+    color:#CFDBFF !important;
 }
 footer a.h6:hover{
     color:#eee !important;
 }
 .card-body{
-    box-shadow: 10px 10px #ffde59;
+    box-shadow: 10px 10px #CFDBFF;
 }
 #shadow{
-    box-shadow: 0px 20px rgba(255, 222, 89, .7)
+    box-shadow: 25px 15px #29404D;
 }
+
 [data-anime="titulo"]:after{
     content: '|';
     margin-left: 5px;
@@ -103,6 +127,25 @@ footer a.h6:hover{
         opacity:0;
     }
 }
+
+/* Carousel */
+.gallery{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.gallery_item{
+    scroll-snap-type: center;
+    min-width: 75%;
+}
+.gallery_card{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Slide */
 .wrapper{
     overflow: hidden;
