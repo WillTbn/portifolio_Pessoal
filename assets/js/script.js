@@ -1,13 +1,14 @@
 import initMenu from './module/menu.js';
 import initScrollSuave from './module/scroll-suave.js';
 import initTypeWriter from './module/writer.js';
-import Slide from './module/debounce.js';
+import Slide from './module/slide.js';
 // import createSection from './module/createSection.js'
 
 initMenu();
 initScrollSuave();
-
-
+const slide = new Slide('.slide', '.wrapper');
+slide.init()
+console.log(slide)
 // // Função para adicionar a section ao final do body
 // function addSectionToBody(section) {
 //     const article = document.getElementById('cursos');

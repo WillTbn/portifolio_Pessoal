@@ -8,7 +8,7 @@ Aqui tento dar uma cara única para minha página pessoal, tendo usar aqui tudo 
  
 Uso o'que há de intermediário, pode assim dizer, em JavaScript identificando toque de smartfone e de desktop fora da caixa interativa de menu, scroll suave e o efeito de escrita do meu nome.
  
-Uso bootstrap para melhor performance de responsividade, pensei sinceramente em usar o grid(CSS) puro, mas iria dar um trabalho e está um pouco corrido estuda e trabalha. 
+Uso bootstrap para melhor performance de responsividade, pensei sinceramente em usar o grid(CSS) puro, mas iria dar um trabalho e está um pouco corrido estuda e trabalha.
  
 ## Consideração final 
  
