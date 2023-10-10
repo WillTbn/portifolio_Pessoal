@@ -9,6 +9,8 @@ initScrollSuave();
 const slide = new Slide('.slide', '.wrapper');
 slide.init()
 console.log(slide)
+
+slide.changeSlide(1)
 // // Função para adicionar a section ao final do body
 // function addSectionToBody(section) {
 //     const article = document.getElementById('cursos');
