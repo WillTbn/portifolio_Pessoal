@@ -7,6 +7,23 @@ body{
 p{
     -webkit-text-stroke-width: thin;
 }
+.title-h1{
+    margin-top: 2rem;
+    font-weight: 800;
+    font-size: 5rem;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* justify-content: center; */
+    align-items: flex-start;
+    text-align: left;
+    font-size: smaller;
+}
+.text-description{
+    font: -webkit-mini-control;
+}
 .pr-10{
     padding: 0px 0px 15px 10px;
 }
@@ -118,7 +135,8 @@ footer a.h6:hover{
     font-weight: bold;
 }
 .card-text{
-    font-size: .7rem;
+    font: small-caption;
+    font-size: .89em;
     min-height: 10rem;
 }
 #shadow{
@@ -168,6 +186,13 @@ footer a.h6:hover{
     background-size: 100%;
     background-repeat: no-repeat;
 }  
+.slide-header-4{
+    background-image: url(../img/slide/carreiras-large.jpg);
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}  
 ul.slide{
     padding: 0px;
     margin: 0px;
@@ -179,7 +204,7 @@ ul.slide{
 .slide:hover{
     will-change: transform;
 }
-.slide li{
+.slide li.card-li{
     width: 40vw;
     flex-shrink: 0;
     max-width:800px;
@@ -194,14 +219,33 @@ ul.slide{
     transform: scale(.8);
     transition: .4s;
 }
-.slide li.active{
+.slide li.card-li.active{
     opacity: 1;
     transform: scale(1);
 }
-  @media (max-width:750px) {
-    .slide li{
+.slide li.card-li .card-text{
+    max-height: 2rem;
+    transform: scale(.8);
+    transition: .7s;
+}
+.slide li.card-li.active .card-text{
+    max-height: none;
+    transform: scale(1);
+}
+
+.slide li.card-li img{
+    max-height: .9rem;
+    transform: scale(.8);
+    transition: 2s;
+}
+.slide li.card-li.active img{
+    max-height: none;
+    transform: scale(1);
+}
+
+@media (max-width:750px) {
+    .slide li.card-li{
         width: 80vw !important;
-       
     }
 }  
 .slide img{
