@@ -187,7 +187,14 @@ footer a.h6:hover{
     background-repeat: no-repeat;
 }  
 .slide-header-4{
-    background-image: url(../img/slide/carreiras-large.jpg);
+    background-image: url(../img/slide/carreiras/carreiras-small.jpg);
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}  
+.slide-header-5{
+    background-image: url(../img/slide/strategy-analytics/small.jpg);
     /* background-size: 100%; */
     background-repeat: no-repeat;
     background-position-y: center;
