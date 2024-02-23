@@ -1,14 +1,11 @@
 import updateData from "./UpdateData.js"
+import enviroment from "./enviroment.js"
 export default async function  initGitInfo(){
-    const dataAcess = {
-        url:"https://api.github.com/repos/",
-        owner:'WillTbn',
-        repo:'portifolio_Pessoal',
-        token:"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"
-    }
+   
+    
     const configHeader = {
         headers:{
-            Authorization:`Bearer ${dataAcess.token}`,
+            Authorization:`Bearer ${enviroment.GIT_TOKEN}`,
             'Accept': 'application/vnd.github+json',
             'X-GitHub-Api-Version': '2022-11-28'
         }
@@ -16,7 +13,7 @@ export default async function  initGitInfo(){
 
     // const imageBlob = fetch('https://jorgenunes.vercel.app/assets/img/Jorge_Nunes-dev.jpeg').then(response => response.blob());
     try{
-        const getData = await fetch(`${dataAcess.url}${dataAcess.owner}/${dataAcess.repo}/commits`, configHeader)
+        const getData = await fetch(`${enviroment.GIT_URL}${enviroment.GIT_OWNER}/${enviroment.GIT_REPO}/commits`, configHeader)
         // .then((response) => {
         //     console.log(response)
         //     return data
