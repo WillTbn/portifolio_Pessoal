@@ -4,6 +4,9 @@ body{
     margin:0;
     overflow-x: hidden;
 }
+code{
+    color: #29404D !important;
+}
 p{
     -webkit-text-stroke-width: thin;
 }
