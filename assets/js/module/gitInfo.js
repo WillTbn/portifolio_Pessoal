@@ -11,7 +11,7 @@ export default async function  initGitInfo(){
         }
     }
 
-    // const imageBlob = fetch('https://jorgenunes.vercel.app/assets/img/Jorge_Nunes-dev.jpeg').then(response => response.blob());
+    // const imageBlob = fetch('https://jorgefsdeveloper.bucardcode.com.br/assets/img/Jorge_Nunes-dev.jpeg').then(response => response.blob());
     try{
         const getData = await fetch(`${enviroment.GIT_URL}${enviroment.GIT_OWNER}/${enviroment.GIT_REPO}/commits`, configHeader)
         // .then((response) => {

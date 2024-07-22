@@ -1,12 +1,12 @@
 export default function shareAction(){
     const buttonAction = document.querySelectorAll('[data-share="share"]');
 
-    // const imageBlob = fetch('https://jorgenunes.vercel.app/assets/img/Jorge_Nunes-dev.jpeg').then(response => response.blob());
+    // const imageBlob = fetch('https://jorgefsdeveloper.bucardcode.com.br/assets/img/Jorge_Nunes-dev.jpeg').then(response => response.blob());
     const data = {
-            url: 'https://jorgenunes.vercel.app/',
+            url: 'https://jorgefsdeveloper.bucardcode.com.br/',
             text: ' Confira meu portfólio com projetos! ',
             title: 'Jorge Nunes | Desenvolvimento fullstack',
-            imageUrl:'https://jorgenunes.vercel.app/assets/img/Jorge_Nunes-dev.jpeg'
+            imageUrl:'https://jorgefsdeveloper.bucardcode.com.br/assets/img/Jorge_Nunes-dev.jpeg'
             // files: [imageBlob],
             // date: '2024-02-23',
             // type: 'image/jpeg',
