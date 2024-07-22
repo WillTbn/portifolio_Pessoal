@@ -3,13 +3,13 @@ import initScrollSuave from './module/scroll-suave.js';
 import initTypeWriter from './module/writer.js';
 import { SlideNav} from './module/slide.js';
 import shareAction from "./module/shareAction.js";
-// import initGitInfo from './module/gitInfo.js';
+import initGitInfo from './module/gitInfo.js';
 // import createSection from './module/createSection.js'
 
 // initMenu();
 shareAction();
 initScrollSuave();
-// initGitInfo();
+initGitInfo();
 const slide = new SlideNav('.slide', '.wrapper');
 slide.init()
 
