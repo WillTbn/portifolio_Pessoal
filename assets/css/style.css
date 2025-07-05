@@ -252,10 +252,16 @@ ul.slide{
     max-height: none;
     transform: scale(1);
 }
-
+.destaque-details{
+    display: flex;
+}
 @media (max-width:750px) {
     .slide li.card-li{
         width: 80vw !important;
+    }
+    
+    .destaque-details{
+        display: grid !important;
     }
 }  
 .slide img{
