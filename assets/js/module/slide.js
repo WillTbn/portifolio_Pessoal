@@ -71,7 +71,7 @@ export class Slide{
     //Config
 
     centerItem(slide){
-        const margin = (this.wrapper.offsetWidth - slide.offsetWidth) /2;
+        const margin = (this.wrapper.offsetWidth - slide.offsetWidth) /1.8;
         return -(slide.offsetLeft - margin);
     }
 
