@@ -1,4 +1,4 @@
-// import initMenu from './module/menu.js';
+import initMenu from './module/menu.js';
 import initScrollSuave from './module/scroll-suave.js';
 import initTypeWriter from './module/writer.js';
 import { SlideNav} from './module/slide.js';
@@ -6,7 +6,7 @@ import shareAction from "./module/shareAction.js";
 // import initGitInfo from './module/gitInfo.js';
 // import createSection from './module/createSection.js'
 
-// initMenu();
+initMenu();
 shareAction();
 initScrollSuave();
 // initGitInfo();
@@ -23,3 +23,19 @@ initTypeWriter(jorge);
 const now = new Date;
 const year = document.getElementById("year");
 year.innerText = "Jorge Nunes - " + now.getFullYear() ;
+
+// Botão voltar ao topo
+const backToTopButton = document.getElementById('backToTop');
+if (backToTopButton) {
+	window.addEventListener('scroll', () => {
+		if (window.scrollY > 300) {
+			backToTopButton.classList.add('show');
+		} else {
+			backToTopButton.classList.remove('show');
+		}
+	});
+
+	backToTopButton.addEventListener('click', () => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	});
+}

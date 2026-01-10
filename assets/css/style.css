@@ -1,4 +1,4 @@
-body{
+html, body{
     font-family: 'BalooDa2-Medium', 'Courier New', monospace !important;
     padding-bottom: 0px;
     margin:0;
@@ -96,7 +96,7 @@ article{
     /*box-shadow: inset 550px 550px rgbargba(108, 14, 214);*/
 }
 [data-menu="button"]{
-    margin-top: -5rem;
+    /* margin-top: 5rem; */
     right: 0rem;
     z-index: 1001;
     position: fixed;

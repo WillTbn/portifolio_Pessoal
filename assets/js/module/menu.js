@@ -23,6 +23,7 @@ export default function initMenu(){
         const menuButton = document.querySelector('[data-menu="button"]');
         const menuList = document.querySelector('[data-menu="list"]');
         const eventos = ['click', 'touchstart'];
+        console.log(menuButton)
         if(menuButton){   
             function openMenu(event){
                 menuList.classList.add('active');
