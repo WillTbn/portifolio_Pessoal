@@ -61,13 +61,13 @@
                                   </svg>
 
                             </button>
-                            <li>
+                            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
                                 <a 
                                     href="assets/doc/Jorge Nunes-cv.pdf" 
-                                    target="_blank" rel="noopener noreferrer" type="button" 
-                                    class="btn btn-light btn-sm"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-outline-light btn-sm"
                                 >
-                                    Veja aqui meu CV
+                                    Currículo (PDF)
                                 </a>
                             </li>
                         </ul>
@@ -98,6 +98,37 @@
                     <p class="pr-10 write-txt">
                        Desenvolvedor FullStack com foco em soluções completas. Experiência em Laravel, Vue.js, bancos de dados e integrações (APIs, ERPs, pagamentos). Apaixonado por transformar ideias em sistemas escaláveis.
                     </p>
+                    <div class="mt-4 d-flex flex-wrap align-items-center">
+                        <a 
+                            href="assets/doc/Jorge Nunes-cv.pdf" 
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline-light border-0 btn-sm me-3 mb-2  d-flex align-items-center justify-content-center"
+                            aria-label="Abrir currículo em PDF"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-trigger="click"
+                            title="Abrir meu currículo em PDF"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                                <path d="M11 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M8 10a2.99 2.99 0 0 0-2.109.879A3.005 3.005 0 0 0 5 13h6a3.005 3.005 0 0 0-.891-2.121A2.99 2.99 0 0 0 8 10"/>
+                            </svg>
+                        </a>
+                        <a 
+                            href="#contato"
+                            class="btn btn-outline-light border-0 btn-sm mb-2  d-flex align-items-center justify-content-center"
+                            aria-label="Ir para contato"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            data-bs-trigger="click"
+                            title="Ir para a seção de contato"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                                <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894"/>
+                                <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0-2 0 1 1 0 0 0 2 0"/>
+                            </svg>
+                        </a>
+                    </div>
                     <section class=" destaque-details">
                         <div class="">
                             <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -643,6 +674,19 @@
         </div><div class="fill mt-0">
         </div><div class="fill mt-0">
     </div>
+
+    <!-- Botão Voltar ao Topo -->
+    <button
+        type="button"
+        id="backToTop"
+        class="btn btn-light position-fixed bottom-0 end-0 m-3 d-none"
+        aria-label="Voltar ao topo"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V3.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4-.007-.007a.497.497 0 0 0-.697.014l-4 3.999a.5.5 0 1 0 .708.708L7.5 3.707V14.5A.5.5 0 0 0 8 15z"/>
+        </svg>
+    </button>
+
     <script type="text/javascript" src="assets/js/jquery-3.4.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="module" src="assets/js/script.js"></script>

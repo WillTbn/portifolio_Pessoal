@@ -24,14 +24,26 @@ const now = new Date;
 const year = document.getElementById("year");
 year.innerText = "Jorge Nunes - " + now.getFullYear() ;
 
+// Tooltips Bootstrap (acionados por clique)
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+tooltipTriggerList.forEach((tooltipTriggerEl) => {
+	if (window.bootstrap && window.bootstrap.Tooltip) {
+		new window.bootstrap.Tooltip(tooltipTriggerEl);
+	}
+});
+
 // Botão voltar ao topo
 const backToTopButton = document.getElementById('backToTop');
-if (backToTopButton) {
+const mainArticle = document.querySelector('article');
+
+if (backToTopButton && mainArticle) {
+	const mainArticleBottom = mainArticle.offsetTop + mainArticle.offsetHeight;
+
 	window.addEventListener('scroll', () => {
-		if (window.scrollY > 300) {
-			backToTopButton.classList.add('show');
+		if (window.scrollY > mainArticleBottom) {
+			backToTopButton.classList.remove('d-none');
 		} else {
-			backToTopButton.classList.remove('show');
+			backToTopButton.classList.add('d-none');
 		}
 	});
 
