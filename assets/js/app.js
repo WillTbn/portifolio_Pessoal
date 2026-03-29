@@ -23,6 +23,13 @@
         menuButton.setAttribute("aria-expanded", "false");
       });
     });
+
+    document.addEventListener("click", function (event) {
+      if (!menu.classList.contains("open")) return;
+      if (menu.contains(event.target) || menuButton.contains(event.target)) return;
+      menu.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
   }
 
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
@@ -64,6 +71,13 @@
 
       if (clickedOutside) dialog.close();
     });
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && menu && menu.classList.contains("open")) {
+      menu.classList.remove("open");
+      if (menuButton) menuButton.setAttribute("aria-expanded", "false");
+    }
   });
 
   const revealItems = document.querySelectorAll(".reveal");
