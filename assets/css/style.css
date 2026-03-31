@@ -624,6 +624,59 @@ p {
   background: rgba(255, 255, 255, 0.11);
 }
 
+.project-dialog-wide {
+  width: min(820px, calc(100% - 2rem));
+}
+
+.landing-item {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.landing-carousel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  width: 100%;
+}
+
+.landing-carousel .carousel-inner {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.landing-carousel .carousel-indicators {
+  margin-bottom: 0.45rem;
+}
+
+.landing-carousel .carousel-indicators button {
+  width: 24px;
+  height: 4px;
+  border-radius: 999px;
+}
+
+.landing-carousel .carousel-control-prev,
+.landing-carousel .carousel-control-next {
+  width: 10%;
+}
+
+.landing-item img {
+  width: 100%;
+  max-height: min(58vh, 420px);
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.22);
+  margin: 0 auto;
+}
+
+.landing-item figcaption {
+  padding: 0.55rem 0.7rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.86rem;
+  color: var(--text-soft);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(15px);

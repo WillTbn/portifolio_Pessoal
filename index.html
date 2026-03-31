@@ -23,9 +23,8 @@
 </head>
 <body>
   <header class="site-header" id="topo">
-    <div class="container nav-wrap">
+    <div class="container nav-wrap py-2 py-lg-0">
       <a class="brand" href="#topo" aria-label="Ir para o topo">
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
         <img src="assets/img/favicon.svg" alt="Logo Jorge Nunes" width="40" height="40">
         <span>Jorge Nunes</span>
       </a>
@@ -36,11 +35,11 @@
       </button>
 
       <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-        <a class="btn btn-outline" href="assets/doc/Jorge Nunes-cv.pdf" target="_blank" rel="noopener noreferrer">Currículo</a>
+        <a class="fw-medium" href="#sobre">Sobre</a>
+        <a class="fw-medium" href="#habilidades">Habilidades</a>
+        <a class="fw-medium" href="#projetos">Projetos</a>
+        <a class="fw-medium" href="#contato">Contato</a>
+        <a class="btn btn-outline shadow-sm" href="assets/doc/Jorge Nunes-cv.pdf" target="_blank" rel="noopener noreferrer">Currículo</a>
       </nav>
     </div>
   </header>
@@ -57,9 +56,9 @@
             performance e entregas consistentes para produto e negócio.
           </p>
 
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#projetos">Ver projetos</a>
-            <a class="btn btn-ghost" href="#contato">Falar comigo</a>
+          <div class="hero-cta d-flex flex-wrap gap-2 gap-sm-3">
+            <a class="btn btn-primary shadow-sm" href="#projetos">Ver projetos</a>
+            <a class="btn btn-ghost shadow-sm" href="#contato">Falar comigo</a>
           </div>
 
           <ul class="hero-meta">
@@ -77,7 +76,7 @@
 
     <section class="section" id="sobre">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head mb-4 mb-lg-5">
           <p class="eyebrow">Sobre</p>
           <h2>Experiência focada em entrega de produto</h2>
         </header>
@@ -131,7 +130,7 @@
 
     <section class="section" id="habilidades">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head mb-4 mb-lg-5">
           <p class="eyebrow">Habilidades</p>
           <h2>Stack principal e áreas de atuação</h2>
         </header>
@@ -187,7 +186,7 @@
 
     <section class="section" id="projetos">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head mb-4 mb-lg-5">
           <p class="eyebrow">Projetos</p>
           <h2>Projetos selecionados</h2>
         </header>
@@ -238,20 +237,23 @@
                 <li><strong>Atuação:</strong> Full Stack </li>
                 <li><strong>Stack:</strong> Laravel, Quasar, Vue.js, PWA</li>
               </ul>
-              <a class="btn btn-outline" href="https://github.com/WillTbn/Gapconnect" target="_blank" rel="noopener noreferrer">Repositório</a>
+              <a  class="btn btn-outline" href="mailto:jlbnunes@live.com" target="_blank" rel="noopener noreferrer">Entre em contato para saber mais</a>
+              <!-- <a class="btn btn-outline" href="https://github.com/WillTbn/Gapconnect" target="_blank" rel="noopener noreferrer">Repositório</a> -->
             </div>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-cover" style="background-image: url('assets/img/slide/gold-banks-layout.jpg');"></div>
+            <div class="project-cover" style="background-image: url('assets/img/slide/landing-page/landin-page.png');"></div>
             <div class="project-body">
-              <h3>Gold Banks</h3>
-              <p>Aplicação web com área administrativa e controle de fluxo operacional.</p>
+              <h3>Landing pages</h3>
+              <p>Páginas institucionais, feitas em Wordpress com intuído de maior presença online da empresa e uma manutenção mais facilitada para equipe não técnica.</p>
               <ul class="project-meta">
-                <li><strong>Atuação:</strong> Full Stack</li>
-                <li><strong>Stack:</strong> PHP, MySQL, JavaScript</li>
+                <li><strong>Atuação:</strong> Front-end</li>
+                <li><strong>Stack:</strong>Wordpress, criação de pluguin Wordpress</li>
               </ul>
-              <a class="btn btn-outline" href="https://github.com/willtbnn/GoldBanks" target="_blank" rel="noopener noreferrer">Repositório</a>
+              <div class="project-actions" style="flex-flow: column;">
+                <button class="btn btn-outline" type="button" data-open-dialog="landingPagesDialog">Detalhes</button>
+              </div>
             </div>
           </article>
 
@@ -273,7 +275,7 @@
 
     <section class="section section-contact" id="contato">
       <div class="container contact-wrap">
-        <header class="section-head">
+        <header class="section-head mb-4 mb-lg-5">
           <p class="eyebrow">Contato</p>
           <h2>Vamos conversar sobre seu projeto</h2>
         </header>
@@ -283,10 +285,10 @@
           posso contribuir com arquitetura, implementação e entrega.
         </p>
 
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:jlbnunes@live.com">Enviar e-mail</a>
-          <a class="btn btn-ghost" href="https://api.whatsapp.com/send?phone=5521983425387" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a class="btn btn-outline" href="assets/doc/Jorge Nunes-cv.pdf" target="_blank" rel="noopener noreferrer">Baixar currículo</a>
+        <div class="contact-actions d-flex flex-wrap gap-2 gap-md-3">
+          <a class="btn btn-primary shadow-sm" href="mailto:jlbnunes@live.com">Enviar e-mail</a>
+          <a class="btn btn-ghost shadow-sm" href="https://api.whatsapp.com/send?phone=5521983425387" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a class="btn btn-outline shadow-sm" href="assets/doc/Jorge Nunes-cv.pdf" target="_blank" rel="noopener noreferrer">Baixar currículo</a>
         </div>
 
         <ul class="social-links" aria-label="Redes sociais">
@@ -300,9 +302,9 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-wrap">
+    <div class="container footer-wrap py-3 py-md-0">
       <p id="year">Jorge Nunes</p>
-      <button class="btn btn-top" id="backToTop" type="button" aria-label="Voltar ao topo">Topo</button>
+      <button class="btn btn-top shadow-sm" id="backToTop" type="button" aria-label="Voltar ao topo">Topo</button>
     </div>
   </footer>
 
@@ -321,7 +323,7 @@
         <li>Integração com pagamentos e videochamada</li>
         <li>Organização de entregas e deploy contínuo</li>
       </ul>
-      <a class="btn btn-primary" href="https://carreiras.co/" target="_blank" rel="noopener noreferrer">Acessar site</a>
+      <a class="btn btn-primary shadow-sm" href="mailto:jlbnunes@live.com" target="_blank" rel="noopener noreferrer">Entre em contato para saber mais</a>
     </article>
   </dialog>
 
@@ -339,7 +341,83 @@
         <li>Consumo de APIs para dashboards e relatórios</li>
         <li>Ajustes para desktop e mobile</li>
       </ul>
-      <a class="btn btn-primary" href="https://strategyanalytics.com.br/" target="_blank" rel="noopener noreferrer">Acessar site</a>
+      <a class="btn btn-primary shadow-sm" href="https://strategyanalytics.com.br/" target="_blank" rel="noopener noreferrer">Acessar site</a>
+    </article>
+  </dialog>
+
+  <dialog class="project-dialog project-dialog-wide" id="landingPagesDialog" aria-labelledby="landingPagesTitle">
+    <article>
+      <header>
+        <h3 id="landingPagesTitle">Landing pages desenvolvidas</h3>
+        <button type="button" class="dialog-close" data-close-dialog>Fechar</button>
+      </header>
+      <p>
+        Seleção de páginas institucionais e de conversão produzidas para diferentes contextos de negócio.
+      </p>
+      <div id="landingPagesCarousel" class="carousel slide landing-carousel" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#landingPagesCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+        </div>
+        <div class="carousel-inner">
+          <figure class="carousel-item landing-item active">
+            <img src="assets/img/slide/landing-page/bucard-code/home.png" class="d-block w-100" alt="Landing page Bucard Code - tela inicial" loading="lazy">
+            <figcaption>Bucard Code</figcaption>
+          </figure>
+          <figure class="carousel-item landing-item">
+            <img src="assets/img/slide/landing-page/deko-art/home.png" class="d-block w-100" alt="Landing page Deko Art - tela inicial" loading="lazy">
+            <figcaption>Deko Art</figcaption>
+          </figure>
+          <figure class="carousel-item landing-item">
+            <img src="assets/img/slide/landing-page/raquel-estetica/home.png" class="d-block w-100" alt="Landing page Raquel Estética - tela inicial" loading="lazy">
+            <figcaption>Raquel Estética</figcaption>
+          </figure>
+          <figure class="carousel-item landing-item">
+            <img src="assets/img/slide/landing-page/majesty/home.png" class="d-block w-100" alt="Landing page Majesty - tela inicial" loading="lazy">
+            <figcaption>Majesty - Home</figcaption>
+          </figure>
+          <figure class="carousel-item landing-item">
+            <img src="assets/img/slide/landing-page/majesty/sobre.png" class="d-block w-100" alt="Landing page Majesty - seção sobre" loading="lazy">
+            <figcaption>Majesty - Sobre</figcaption>
+          </figure>
+          <figure class="carousel-item landing-item">
+            <img src="assets/img/slide/landing-page/landapp/home.png" class="d-block w-100" alt="Landing page Landapp - home" loading="lazy">
+            <figcaption>Landapp - Home</figcaption>
+          </figure>
+          <figure class="carousel-item landing-item">
+            <img src="assets/img/slide/landing-page/landapp/quem-somos.png" class="d-block w-100" alt="Landing page Landapp - seção quem somos" loading="lazy">
+            <figcaption>Landapp - Quem Somos</figcaption>
+          </figure>
+          <figure class="carousel-item landing-item">
+            <img src="assets/img/slide/landing-page/landapp/clientes.png" class="d-block w-100" alt="Landing page Landapp - seção clientes" loading="lazy">
+            <figcaption>Landapp - Clientes</figcaption>
+          </figure>
+          <figure class="carousel-item landing-item">
+            <img src="assets/img/slide/landing-page/landapp/empresas.png" class="d-block w-100" alt="Landing page Landapp - seção empresas" loading="lazy">
+            <figcaption>Landapp - Empresas</figcaption>
+          </figure>
+          <figure class="carousel-item landing-item">
+            <img src="assets/img/slide/landing-page/landapp/camioneiros.png" class="d-block w-100" alt="Landing page Landapp - seção caminhoneiros" loading="lazy">
+            <figcaption>Landapp - Caminhoneiros</figcaption>
+          </figure>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#landingPagesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#landingPagesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
     </article>
   </dialog>
 
