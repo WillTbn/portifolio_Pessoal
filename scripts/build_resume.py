@@ -46,22 +46,20 @@ p('Desenvolvedor Full Stack | Laravel, Vue.js e desenvolvimento com IA','role')
 p('Rio de Janeiro, RJ | (21) 98342-5387 | <link href="mailto:jlbnunes@live.com">jlbnunes@live.com</link>','contact')
 p('<link href="https://github.com/WillTbn">GitHub: WillTbn</link>  |  <link href="https://www.linkedin.com/in/jlbnunes">LinkedIn: jlbnunes</link>  |  <link href="https://jorgelbnunes.com.br">Portfólio: jorgelbnunes.com.br</link>','contact')
 section('Resumo profissional')
-p('Desenvolvedor full stack com experiência em aplicações web, APIs REST, integrações com ERPs e automação de processos. Base técnica em PHP/Laravel e JavaScript/Vue.js. Atualmente, desenvolvo o front-end do Strategy Analytics v2 e atuo na construção full stack do Mauá Sinc com apoio de IA. Experiência com manutenção de legado, bancos de dados, implantação e evolução de sistemas.')
+p('Desenvolvedor full stack com experiência em aplicações web, APIs REST, integrações com ERPs e automação de processos. Base técnica em PHP/Laravel e JavaScript/Vue.js. Atualmente, desenvolvo o front-end do Strategy Analytics v2 e minha experiência PJ na Leader (Grupo Mauá) inclui a construção full stack do Mauá Sinc com apoio de IA. Experiência com manutenção de legado, bancos de dados, implantação e evolução de sistemas.')
 section('Projetos atuais')
 job('Strategy Analytics v2 | Desenvolvimento front-end','Vue.js 3, Quasar e integração com APIs | Em desenvolvimento',[
 'Construção do portal do cliente: carteira, contratos, cadastro, perfil, contas bancárias e envio de documentos.',
 'Implementação de interfaces responsivas, validações, autenticação e estados de carregamento, erro e ausência de dados.'
 ])
-job('Mauá Sinc | Desenvolvimento full stack com IA','Laravel, JavaScript, Tailwind e integrações | Plataforma interna do Grupo Mauá',[
-'Atuação em interfaces, regras de negócio e integrações para CRM, financeiro, processos de RH e dashboards.',
-'Construção de fluxos de sincronização com o ERP TOTVS e permissões por papel e módulo.',
-'Uso de IA como apoio ao desenvolvimento e à evolução do sistema.'
-])
 section('Experiência profissional')
-job('Grupo Mauá (Leader) | Desenvolvedor Backend','Dez/2024 - Set/2025 | PJ',[
+job('Backend Pleno - Leader (Grupo Mauá)','Dez/2024 - Set/2025 | PJ',[
+'Atuação full stack com IA no Mauá Sinc, plataforma interna do Grupo Mauá, como parte da experiência na Leader.',
+'Desenvolvimento de interfaces, regras de negócio e integrações para CRM, financeiro, processos de RH e dashboards, com Laravel, JavaScript e Tailwind.',
+'Sincronização com o ERP TOTVS e implementação de permissões por papel e módulo, usando IA como apoio à construção e evolução do sistema.',
 'Desenvolvimento e manutenção de sistemas legados, APIs REST e integrações com Bling, Sublimity, Wake, GetNet e Mercado Pago.',
 'Automação de processos, logs integrados ao Slack e monitoramento de servidores em produção.',
-'Tecnologias: PHP, Laravel, JavaScript, jQuery, Bootstrap, MySQL e PostgreSQL.'
+'Tecnologias: PHP, Laravel, JavaScript, Tailwind, jQuery, Bootstrap, MySQL e PostgreSQL.'
 ])
 job('Strategy Analytics | Consultor Desenvolvedor Full Stack','Mai/2024 - Dez/2024 | Autônomo',[
 'Desenvolvimento de landing page e sistema de gestão de carteiras, com rotinas agendadas, envio de e-mails e QR Code dinâmico para Pix.',
