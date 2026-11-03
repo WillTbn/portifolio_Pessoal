@@ -1,11 +1,13 @@
 (function () {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const scrollBehavior = () => reducedMotion.matches ? "auto" : "smooth";
   const year = document.getElementById("year");
   if (year) year.textContent = "Jorge Nunes - " + new Date().getFullYear();
 
   const backToTop = document.getElementById("backToTop");
   if (backToTop) {
     backToTop.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
     });
   }
 
@@ -15,12 +17,14 @@
     menuButton.addEventListener("click", function () {
       const isOpen = menu.classList.toggle("open");
       menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
     });
 
     menu.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
         menu.classList.remove("open");
         menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Abrir menu");
       });
     });
 
@@ -29,6 +33,7 @@
       if (menu.contains(event.target) || menuButton.contains(event.target)) return;
       menu.classList.remove("open");
       menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Abrir menu");
     });
   }
 
@@ -39,7 +44,7 @@
       const section = document.querySelector(targetId);
       if (!section) return;
       event.preventDefault();
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      section.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
     });
   });
 
@@ -49,6 +54,7 @@
       const id = this.getAttribute("data-open-dialog");
       const dialog = document.getElementById(id);
       if (dialog && typeof dialog.showModal === "function") {
+        dialog.dataset.trigger = id;
         dialog.showModal();
       }
     });
@@ -77,29 +83,8 @@
     if (event.key === "Escape" && menu && menu.classList.contains("open")) {
       menu.classList.remove("open");
       if (menuButton) menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Abrir menu");
     }
   });
 
-  const revealItems = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window && revealItems.length) {
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    revealItems.forEach(function (item) {
-      observer.observe(item);
-    });
-  } else {
-    revealItems.forEach(function (item) {
-      item.classList.add("in");
-    });
-  }
 })();

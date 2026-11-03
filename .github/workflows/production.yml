@@ -1,0 +1,64 @@
+name: Portfolio production
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Validate JavaScript and package site
+        run: |
+          node --check assets/js/app.js
+          python3 scripts/package_site.py
+      - name: Configure production SSH
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        env:
+          SSH_KEY: ${{ secrets.PRODUCTION_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.PRODUCTION_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/portfolio
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/portfolio ~/.ssh/known_hosts
+      - name: Deploy and check public production
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        env:
+          DEPLOY_HOST: ${{ vars.PRODUCTION_HOST }}
+          DEPLOY_USER: ${{ vars.PRODUCTION_USER }}
+        run: |
+          set -euo pipefail
+          ssh_args=(-i ~/.ssh/portfolio -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=15)
+          target="$DEPLOY_USER@$DEPLOY_HOST"
+          ssh "${ssh_args[@]}" "$target" "deploy $GITHUB_SHA" < dist/portfolio.zip
+          healthy=false
+          for attempt in 1 2 3 4; do
+            revision=$(curl --fail --silent --show-error --max-time 20 "https://jorgelbnunes.com.br/version.txt?revision=$GITHUB_SHA") || revision=''
+            if [ "$revision" = "$GITHUB_SHA" ] && curl --fail --silent --show-error --max-time 20 -o /dev/null "https://jorgelbnunes.com.br/assets/doc/Jorge%20Nunes-cv.pdf?revision=$GITHUB_SHA"; then
+              healthy=true
+              break
+            fi
+            sleep 5
+          done
+          if [ "$healthy" != true ]; then
+            ssh "${ssh_args[@]}" "$target" "rollback $GITHUB_SHA"
+            echo 'Production verification failed; previous release restored.' >&2
+            exit 1
+          fi
+          echo "Published https://jorgelbnunes.com.br at $GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
+      - name: Remove ephemeral SSH credentials
+        if: always()
+        run: rm -f ~/.ssh/portfolio
