@@ -60,8 +60,8 @@ job('Strategy Analytics | Consultor Desenvolvedor Full Stack','Mai/2024 - até o
 '<b>Strategy Analytics v2 - foco em front-end:</b> desenvolvimento do portal do cliente com Vue.js 3 e Quasar, integrado às APIs.',
 'Construção das interfaces de carteira, contratos, cadastro, perfil, contas bancárias e envio de documentos.',
 'Implementação de layouts responsivos, validações, autenticação e estados de carregamento, erro e ausência de dados.',
-'Desenvolvimento de landing page e sistema de gestão de carteiras, com rotinas agendadas, envio de e-mails e QR Code dinâmico para Pix.',
-'Implantação na Hostinger com CI/CD via GitHub. Stack: Laravel, MySQL, Vue.js 3 e Quasar.'
+'Na versão anterior, desenvolvimento de landing page e sistema de gestão de carteiras, com rotinas agendadas, envio de e-mails e QR Code dinâmico para Pix.',
+'Implantação da versão anterior na Hostinger com CI/CD via GitHub. Stack: Laravel, MySQL, Vue.js 3 e Quasar.'
 ])
 job('Geração Oportunidade | Consultor Desenvolvedor de Software','Jan/2024 - Mar/2024 | Autônomo',[
 'Plataforma de conexão entre empresas e candidatos, com API REST em Laravel e PWA em Vue.js/Quasar; aplicação de SOLID e DTOs.'
