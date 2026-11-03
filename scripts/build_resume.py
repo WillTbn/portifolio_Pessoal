@@ -47,11 +47,6 @@ p('Rio de Janeiro, RJ | (21) 98342-5387 | <link href="mailto:jlbnunes@live.com">
 p('<link href="https://github.com/WillTbn">GitHub: WillTbn</link>  |  <link href="https://www.linkedin.com/in/jlbnunes">LinkedIn: jlbnunes</link>  |  <link href="https://jorgelbnunes.com.br">Portfólio: jorgelbnunes.com.br</link>','contact')
 section('Resumo profissional')
 p('Desenvolvedor full stack com experiência em aplicações web, APIs REST, integrações com ERPs e automação de processos. Base técnica em PHP/Laravel e JavaScript/Vue.js. Atualmente, desenvolvo o front-end do Strategy Analytics v2 e minha experiência PJ na Leader (Grupo Mauá) inclui a construção full stack do Mauá Sinc com apoio de IA. Experiência com manutenção de legado, bancos de dados, implantação e evolução de sistemas.')
-section('Projetos atuais')
-job('Strategy Analytics v2 | Desenvolvimento front-end','Vue.js 3, Quasar e integração com APIs | Em desenvolvimento',[
-'Construção do portal do cliente: carteira, contratos, cadastro, perfil, contas bancárias e envio de documentos.',
-'Implementação de interfaces responsivas, validações, autenticação e estados de carregamento, erro e ausência de dados.'
-])
 section('Experiência profissional')
 job('Backend Pleno - Leader (Grupo Mauá)','Dez/2024 - Set/2025 | PJ',[
 'Atuação full stack com IA no Mauá Sinc, plataforma interna do Grupo Mauá, como parte da experiência na Leader.',
@@ -62,6 +57,9 @@ job('Backend Pleno - Leader (Grupo Mauá)','Dez/2024 - Set/2025 | PJ',[
 'Tecnologias: PHP, Laravel, JavaScript, Tailwind, jQuery, Bootstrap, MySQL e PostgreSQL.'
 ])
 job('Strategy Analytics | Consultor Desenvolvedor Full Stack','Mai/2024 - Dez/2024 | Autônomo',[
+'<b>Strategy Analytics v2 - foco em front-end:</b> desenvolvimento do portal do cliente com Vue.js 3 e Quasar, integrado às APIs.',
+'Construção das interfaces de carteira, contratos, cadastro, perfil, contas bancárias e envio de documentos.',
+'Implementação de layouts responsivos, validações, autenticação e estados de carregamento, erro e ausência de dados.',
 'Desenvolvimento de landing page e sistema de gestão de carteiras, com rotinas agendadas, envio de e-mails e QR Code dinâmico para Pix.',
 'Implantação na Hostinger com CI/CD via GitHub. Stack: Laravel, MySQL, Vue.js 3 e Quasar.'
 ])
