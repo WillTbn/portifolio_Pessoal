@@ -79,7 +79,7 @@ job('Sistema Venda Direta | Consultor Desenvolvedor de Software','Mar/2020 - Jan
 job('Exis Serviços | Suporte Técnico','Set/2018 - Jan/2022 | CLT',[
 'Suporte na TI da Light para aplicativo de leitura de consumo, com testes, documentação, treinamentos, implantação em campo e levantamento de requisitos.'
 ])
-job('Desenvolvedor PJ | Projetos e consultoria','2018 - 2025',[
+job('BucardCode | Desenvolvedor - Projetos e consultoria','2018 - até o momento | PJ',[
 'Desenvolvimento de sites em WordPress, PWAs com Vue.js, MVPs sob demanda e consultoria em sistemas full stack.'
 ])
 section('Competências técnicas')
