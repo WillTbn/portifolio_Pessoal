@@ -48,7 +48,7 @@ p('<link href="https://github.com/WillTbn">GitHub: WillTbn</link>  |  <link href
 section('Resumo profissional')
 p('Desenvolvedor full stack com experiência em aplicações web, APIs REST, integrações com ERPs e automação de processos. Base técnica em PHP/Laravel e JavaScript/Vue.js. Atualmente, desenvolvo o front-end do Strategy Analytics v2 e minha experiência PJ na Leader (Grupo Mauá) inclui a construção full stack do Mauá Sinc com apoio de IA. Experiência com manutenção de legado, bancos de dados, implantação e evolução de sistemas.')
 section('Experiência profissional')
-job('Backend Pleno - Leader (Grupo Mauá)','Dez/2024 - Set/2025 | PJ',[
+job('Backend Pleno - Leader (Grupo Mauá)','Dez/2024 - até o momento | PJ',[
 'Atuação full stack com IA no Mauá Sinc, plataforma interna do Grupo Mauá, como parte da experiência na Leader.',
 'Desenvolvimento de interfaces, regras de negócio e integrações para CRM, financeiro, processos de RH e dashboards, com Laravel, JavaScript e Tailwind.',
 'Sincronização com o ERP TOTVS e implementação de permissões por papel e módulo, usando IA como apoio à construção e evolução do sistema.',
@@ -56,7 +56,7 @@ job('Backend Pleno - Leader (Grupo Mauá)','Dez/2024 - Set/2025 | PJ',[
 'Automação de processos, logs integrados ao Slack e monitoramento de servidores em produção.',
 'Tecnologias: PHP, Laravel, JavaScript, Tailwind, jQuery, Bootstrap, MySQL e PostgreSQL.'
 ])
-job('Strategy Analytics | Consultor Desenvolvedor Full Stack','Mai/2024 - Dez/2024 | Autônomo',[
+job('Strategy Analytics | Consultor Desenvolvedor Full Stack','Mai/2024 - até o momento | Autônomo',[
 '<b>Strategy Analytics v2 - foco em front-end:</b> desenvolvimento do portal do cliente com Vue.js 3 e Quasar, integrado às APIs.',
 'Construção das interfaces de carteira, contratos, cadastro, perfil, contas bancárias e envio de documentos.',
 'Implementação de layouts responsivos, validações, autenticação e estados de carregamento, erro e ausência de dados.',
