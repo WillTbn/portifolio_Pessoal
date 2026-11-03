@@ -97,6 +97,8 @@ h4 { font-size: 1.1rem; }
 .timeline-list li { display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; padding: 24px 0; border-top: 1px solid var(--line); }
 .timeline-list strong { font-weight: 500; }
 .timeline-list p { font-size: .95rem; }
+.experience-heading strong { display: block; }
+.timeline-list .experience-period { margin-top: 8px; color: var(--primary); font-size: .85rem; }
 .skills-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 32px; }
 .skill-card { border-top: 1px solid var(--line); padding-top: 22px; }
 .skill-card h3 { font-size: 1.05rem; margin-bottom: 20px; }
